@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABR Network | Internet Fibra</title>
+  <meta name="description" content="Planos de internet fibra com suporte 24/7 e cobertura local." />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="icon" type="image/png" href="/assets/img/logo.ico" sizes="32x32">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap">
+      <a href="#" class="logo">
+        <img src="assets/img/logo_abr.png" alt="Logo do Provedor">
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#planos">Planos</a>
+        <a href="#beneficios">Porque escolher a ABR</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://api.whatsapp.com/send?phone=5591981830411" class="cta-button">
+            <i class="fab fa-whatsapp"></i> Atendimento Whatsapp
+        </a>
+      </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <section id = "planos" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <h2>Internet Fibra ultra-rápida <span>na sua região</span></h2>
+        <h1>Navegue com a <span>Ultra Velocidade da ABR</span></h1>
+      </div>
+
+      <div class="container-cards">
+        <!-- card básico -->
+        <div class="plano-card">
+            <div class="card-header">
+                <p>ABR BÁSICO</p>
+            </div>
+            <div class="velocidade">
+                <span>100</span>
+                <p>MEGA</p>
+            </div>
+            <button class="btn-premium">SUPORTE 24 HORAS</button>
+            <button class="btn-premium">WI-FI GRÁTIS</button>
+            <button class="btn-premium">CABEAMENTO ESTRUTURADO</button>
+            <button class="btn-premium">SEM FIDELIDADE</button>
+            <div class="preco-box">
+                <p class="por">POR</p>
+                <p class="moeda">R$</p>
+                <p class="valor-principal">79,<span class="decimal">99</span></p>
+                <p class="mensal">/MÊS</p>
+            </div>
+            <p class="vencimento">*Até o vencimento</p>
+            <a href="https://api.whatsapp.com/send?phone=5591981830411" class="btn-whatsapp">Escolher este Plano</a>
+        </div>
+        <!-- card plus -->
+        <div class="plano-card">
+            <div class="card-header">
+                <p>ABR PLUS</p>                
+            </div>
+            <div class="velocidade">
+                <span>400</span>
+                <p>MEGA</p>
+            </div>
+            <button class="btn-premium">SUPORTE 24 HORAS</button>
+            <button class="btn-premium">ROTEADOR COM TECNOLOGIA WI-FI 6</button>
+            <button class="btn-premium">CABEAMENTO ESTRUTURADO</button>
+            <button class="btn-premium">SEM FIDELIDADE</button>
+            
+            <div class="preco-box">
+                <p class="por">POR</p>
+                <p class="moeda">R$</p>
+                <p class="valor-principal">99,<span class="decimal">99</span></p>
+                <p class="mensal">/MÊS</p>
+            </div>
+            <p class="vencimento">*Até o vencimento</p>
+            <a href="https://api.whatsapp.com/send?phone=5591981830411" class="btn-whatsapp">Escolher este Plano</a>
+        </div>
+        <!-- card mega -->
+        <div class="plano-card">
+            <div class="card-header">
+                <p>ABR MEGA</p>
+            </div>
+            <div class="velocidade">
+                <span>600</span>
+                <p>MEGA</p>
+            </div>
+            <button class="btn-premium">SUPORTE 24 HORAS</button>
+            <button class="btn-premium">ROTEADOR COM TECNOLOGIA WI-FI 6</button>
+            <button class="btn-premium">REPETIDOR DE SINAL INCLUSO</button>
+            <button class="btn-premium">CABEAMENTO ESTRUTURADO</button>
+            <button class="btn-premium">SEM FIDELIDADE</button>
+            <div class="preco-box">
+                <p class="por">POR</p>
+                <p class="moeda">R$</p>
+                <p class="valor-principal">129,<span class="decimal">99</span></p>
+                <p class="mensal">/MÊS</p>
+            </div>
+            <p class="vencimento">*Até o vencimento</p>
+            <a href="https://api.whatsapp.com/send?phone=5591981830411" class="btn-whatsapp">Escolher este Plano</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="beneficios" class="wrap features">
+      <h2>Por que escolher a <span>ABR Network</span>?</h2>
+      <div class="features-grid">
+        <div class="feature">
+            <h3><i class="fas fa-headset icon-cor"></i> Suporte Humano e Rápido</h3>
+            <p>Atendimento imediato, 24 horas por dia, 7 dias por semana, com equipe técnica local sempre à disposição.</p>
+        </div>
+        
+        <div class="feature">
+            <h3><i class="fas fa-gamepad icon-cor"></i> Internet Otimizada para Jogos</h3>
+            <p>Latência ultrabaixa e rota dedicada. Sua rede ideal para jogos online (FPS) e videoconferências sem travas.</p>
+        </div>
+        
+        <div class="feature">
+            <h3><i class="fas fa-tools icon-cor"></i> Instalação Agendada e Veloz</h3>
+            <p>Instalação garantida em até 48 horas úteis após a contratação. Menos espera, mais internet para você.</p>
+        </div>
+        <div class="feature">
+            <h3><i class="fas fa-film icon-cor"></i> Streaming Otimizado 4K</h3>
+            <p>Assista em Ultra HD travamentos. Nossa rede tem rotas diretas para os principais serviços (Netflix, YouTube, Prime Video), garantindo a máxima qualidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cobertura" class="wrap cobertura">
+        <h2>Cobertura</h2>
+        <p>Estamos em processo de expansão, atualmente atendemos os bairros: <span id="bairros">Tapanã/Pratinha</span></p>
+        
+        <div class="mapa-container">
+            <div id="mapa-cobertura-osm" style="height: 450px;"></div>
+        </div>
+    </section>
+
+    <section id="indique-ganhe" class="wrap indique-ganhe-section">
+        <div class="indique-content">
+            <h2 class="animar-elemento">Indique e Ganhe Desconto!</h2>
+            <p class="animar-elemento">
+                Traga seus amigos para a <span id="bairros">ABR Network</span> e aproveitem juntos um super desconto na mensalidade.
+            </p>
+            
+            <div class="passos-indique-grid">
+                <div class="passo animar-elemento">
+                    <i class="fas fa-user-plus icon-passo"></i>
+                    <h3>1. Indique um Amigo</h3>
+                    <p>Solicite para o seu amigo informar o seu nome na hora da contratação</p>
+                </div>
+                <div class="passo animar-elemento">
+                    <i class="fas fa-handshake icon-passo"></i>
+                    <h3>2. Ele Contrata</h3>
+                    <p>Seu amigo finaliza a contratação e paga a instalação</p>
+                </div>
+                <div class="passo animar-elemento">
+                    <i class="fas fa-tag icon-passo"></i>
+                    <h3>3. Você ganha!</h3>
+                    <p>Você recebe um desconto especial na próxima mensalidade.</p>
+                </div>
+            </div>
+            
+            <a href="https://api.whatsapp.com/send?phone=5591981830411" class="btn-indique animar-elemento">Quero Indicar Agora! <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <section class="app-download-section">
+        <div class="wrap">
+            <div class="app-image">
+                <picture>
+                    <source srcset="/assets/img/logo_app.webp" type="image/webp">
+                    <img src="/assets/img/logo_app.webp" alt="Interface do aplicativo MeuAppProvedor em um celular">
+                </picture>
+            </div>
+            <div class="download-content">
+                <h2>Baixe o App MeuAppProvedor</h2>
+                <p>Tenha o controle total da sua conexão na palma da sua mão! Acesse faturas, solicite suporte e monitore seu consumo de dados.</p>
+
+                <div class="app-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=br.net.tsmx.meuappprovedor" target="_blank" rel="noopener noreferrer" class="app-button android-button">
+                        
+                        <span>Baixar para Android</span>
+                    </a>
+                    
+                    <a href="https://apps.apple.com/br/app/meuappprovedor/id1637448837" target="_blank" rel="noopener noreferrer" class="app-button ios-button">
+                        
+                        <span>Baixar para IOS</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="app-image">
+                
+                </div>
+        </div>
+    </section>
+
+    <section id="faq" class="wrap faq">
+      <h2>Perguntas frequentes</h2>
+      <details><summary>Como funciona a instalação?</summary><div class="answer">Técnicos agendam e instalam em até 2 dias úteis após confirmação.</div></details>
+      <details><summary>Tenho contrato mensal?</summary><div class="answer">Os nossos planos são fechados via contrato mas sem fidelidade!</div></details>
+      <details><summary>Como pagar a fatura?</summary><div class="answer">Boleto, Pix e com cartão de crédito se vier presencialmente até a unidade.</div></details>
+      <details><summary>Oque é o Wi-fi 6 que é fornecido apartir do plano Plus?</summary><div class="answer">Entregamos para o cliente um modem com tecnologia Wi-fi 6 que permite conexões até 40% mais rápidas, com menos interferência e suporte para múltiplos dispositivos</div></details>
+      <details><summary>Possuem Cabeamento Estruturado? </summary><div class="answer">a ABR Network é especializada em soluções de Cabeamento Estruturado completo para empresas e residências.</div></details>
+    </section>
+
+ <footer class="footer">
+        <div class="wrap">
+            <div class="footer-info">
+                <div>© <span id="year"></span> ABR Network — Todos os direitos reservados</div>
+            </div>
+
+            <div class="footer-contacts-group">
+                
+                <a href="#" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <span>abrnetlink@gmail.com</span>
+                </a>
+
+                <a href="https://wa.me/5591981830411" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                    <span>(91) 98183-0411</span>
+                </a>
+                
+                <a href="https://www.instagram.com/abrnetworktelecom_/?igsh=bXR4MTUxNjV1MHVh#" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <span>@abrnetworktelecom_</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+  <a class="whatsapp-float" href="https://api.whatsapp.com/send?phone=5591981830411" target="_blank" rel="noopener" aria-label="Fale Conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/animação_card.js"></script>
+  <script src="assets/js/mapa.js"></script>
+</body>
+</html>
